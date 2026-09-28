@@ -1,23 +1,64 @@
 aid: biodesignlab
+
 name: Biodesignlab
-description: 'Biodesignlab is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://biodesignlab.net/wp-content/uploads/2023/12/BDL-url-preview-image-1200x625-1.png
+
+description: 'Bio Design Lab is a biotechnology and bioengineering company based in Seoul, South Korea. It creates and develops highly potent biopharmaceuticals using synthetic biology and systems-level genetic and genomic designs. The firm focuses on advancing retroviral and lentiviral vector platforms for cell and gene therapies, offering vector packaging services and innovative platform solutions. Its mission is to design and construct gene and cell therapy drugs and immunotherapies, delivering novel therapeutic technologies.'
+
 url: https://raw.githubusercontent.com/api-evangelist/biodesignlab/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Biotechnology
+- Bioengineering
+- GeneTherapy
+- SyntheticBiology
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/biodesignlab-hosts.yml
+- type: Leadership
+  url: https://biodesignlab.net/team/
+- type: GitHubOrganization
+  url: https://github.com/biodesignlab
+- type: DomainSecurity
+  url: security/biodesignlab-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/biodesignlab
+  url: https://biodesignlab.net
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: No OpenAPI, AsyncAPI, GraphQL, or other machine-readable contract found at the API host.
+  evidence:
+    - url: https://api.biodesignlab.net
+      status: 000
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
